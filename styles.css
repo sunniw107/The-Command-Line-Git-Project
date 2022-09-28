@@ -23,17 +23,9 @@
 }
 
 .header {
-	position: relative;
-	width: 100%;
-	min-height: auto;
-	text-align: center;
-	color: #fff;
-	background-image: url('../images/header.jpg');
-	background-position: center;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
-	background-size: cover;
-	-o-background-size
+	-o-background-size: cover;
 }
 
 .header .header-content .header-content-inner .h1 {
@@ -49,6 +41,23 @@
 	font-weight: 300;
 	color: rgba(255,255,255,.7);
 }
+
+.header-content {
+	background-image: url('./images/header.jpg');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	height: 100vh;
+    width: 100vw;
+
+}
+
+.header-content-inner {
+	text-align: center;
+	font-color: white;
+	color: white;
+	}
+
 
 @media(min-width: 768px) {
 	.header {
@@ -75,10 +84,11 @@
 		font-size: 18px;
 	}
 }
-.section-heading {
-	margin-top: 0;
-	margin-bottom: 20px;
+.col-lg-8 {
+	margin-top: 50px;
+	margin-left: 200px;
 }
+
 
 .intro {
 	color: #fff;
@@ -94,7 +104,7 @@
 .content-2 {
 	color: #fff;
 	background-color: #222;
-	text-align: center;
+	text-align: left;
 }
 
 
@@ -103,13 +113,18 @@
 	text-align: center;
 }
 
+.img-circle {
+	border-radius: 50%;
+	width: 85%;
+}
+
 
 .promo,
-.promo .h3,
-.promo .a:link,
-.promo .a:visited,
-.promo .a:hover,
-.promo .a:active {
+.promo h3,
+.promo a:link,
+.promo a:visited,
+.promo a:hover,
+.promo a:active {
 	color: white;
 	text-shadow: 0px 0px 40px black;
 	text-decoration: none;
@@ -119,6 +134,7 @@
 	height: 200px;
 	line-height: 180px;
 	text-align: center;
+	vertical-align: middle;
 }
 
 .promo-item:hover {
@@ -130,7 +146,11 @@
 .promo-item, .h3 {
 	font-size: 40px;
 	display: inline-block;
-	vertical-align: middle;
+}
+
+.col-md-4 {
+	padding-top: 70px;
+
 }
 
 .item-1 {
@@ -150,8 +170,15 @@
 .item-3 {
 	background-size: cover;
 	background-position: 50% 50%;
-	height: 97vh;
-    width: 97vw;
+	height: 20vh;
+    width: 100vw;
+}
+
+.item-1:hover,
+.item-2:hover,
+.item-3:hover {
+	border: solid;
+	border-color: transparent;
 }
 
 .page-footer {
@@ -184,10 +211,16 @@
 	color: rgba(255, 255, 255, .7);
 }
 
+.navbar-default {
+    border-color: rgba(34,34,34,.05);
+    background-color: #fff;
+    -webkit-transition: all .35s;
+    -moz-transition: all .35s;
+    transition: all .35s;
+}
+
 .navbar-default .navbar-header .navbar-brand {
 	color: yellowgreen;
-	height: 100vh;
-	width: 100vw;
 }
 
 .navbar-default .navbar-header .navbar-brand:hover,
@@ -195,24 +228,24 @@
 	color: #eb3812;
 }
 
-.navbar-default .nav > .li>.a,
-.navbar-default .nav>.li>.a:focus {
+.navbar-default .nav > li>a,
+.navbar-default .nav>li>a:focus {
 	color: #222;
 }
 
-.navbar-default .nav > .li>.a:hover,
-.navbar-default .nav>.li>.a:focus:hover {
+.navbar-default .nav > li>a:hover,
+.navbar-default .nav>li>a:focus:hover {
 	color: yellowgreen;
 }
 
-.navbar-default .nav > .li.active>.a,
-.navbar-default .nav>.li.active>.a:focus {
+.navbar-default .nav > li.active>a,
+.navbar-default .nav>li.active>a:focus {
 	color: yellowgreen!important;
 	background-color: transparent;
 }
 
-.navbar-default .nav > .li.active>.a:hover,
-.navbar-default .nav>.li.active>.a:focus:hover {
+.navbar-default .nav > li.active>a:hover,
+.navbar-default .nav>li.active>a:focus:hover {
 	background-color: transparent;
 }
 
@@ -227,13 +260,13 @@
 		color: #fff;
 	}
 
-	.navbar-default .nav > .li>.a,
-	.navbar-default .nav>.li>.a:focus {
+	.navbar-default .nav > li>a,
+	.navbar-default .nav>li>a:focus {
 		color: rgba(255, 255, 255, .7);
 	}
 
-	.navbar-default .nav > .li>.a:hover,
-	.navbar-default .nav>.li>.a:focus:hover {
+	.navbar-default .nav > li>a:hover,
+	.navbar-default .nav>li>a:focus:hover {
 		color: #fff;
 	}
 
@@ -253,9 +286,13 @@
 		color: #eb3812;
 	}
 
-	.navbar-default.affix .nav > .li>.a,
-	.navbar-default.affix .nav>.li>.a:focus:hover {
+	.navbar-default.affix .nav > li>a,
+	.navbar-default.affix .nav>li>a:focus:hover {
 		color: yellowgreen;
+	}
+	.header {
+		display: flex;
+
 	}
 }
 
@@ -270,6 +307,7 @@
 
 .btn-default:hover,
 .btn-default:focus,
+.btn-primary.focus,
 .btn-default:active,
 .btn-default.active,
 .open > .dropdown-toggle.btn-default {
@@ -350,30 +388,3 @@ img::-moz-selection {
 .bg-primary {
     background-color: yellowgreen;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
