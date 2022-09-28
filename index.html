@@ -27,46 +27,42 @@
 
 <body>
     <!--Navigation -->
-    <nav id="sitebar" class="navbar navbar-default navbar-fixed-top" role="navigation">
-        <div class="container">
-            <!-- Logo and responsive toggle -->
-           <div class="navbar-header">
-               <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
-                   <span class="sr-only">Toggle navigation</span>
-                   <span class="icon-bar"></span>
-                   <span class="icon-bar"></span>
-                   <span class="icon-bar"></span>
-               </button>
-               <a class="navbar-brand" href="#">
-                   <span class="glyohicon glyphicon-fire"></span> LOGO
-               </a>
-           </div> 
-           <!-- Navbar links -->
-           <div class="navbar-collapse" id="navbar">
-                <ul class="nav navbar-nav navbar-right">
-                    <li class="active">
-                        <a href="#">Home</a>
-                    </li>
-                    <li>
-                        <a href="#">Products</a>
-                    </li>
-                                <li class="dropdown">
-                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Services <span class="caret"></span></a>
-                                    <ul class="dropdown-menu" aria-labelledby="about-us">
-                                        <li><a href="#">Engage</a></li>
-                                        <li><a href="#">Pontificate</a></li>
-                                        <li><a href="#">Synergize</a></li>
-                                    </ul>
-                                </li>
-                    <li>
-                        <a href="#">Contact</a>
-                    </li>
-                </ul>
+    <nav class="navbar justify-content-center sticky-top navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Logo</a>
+           
 
-           </div><!-- /.navbar-collapse -->
-       </div><!-- /.container -->
-        
-    </nav>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+        </button>
+
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="nav navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Products</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+    Services
+            </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="#">Engage</a></li>
+            <li><a class="dropdown-item" href="#">Pontificate</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Synergize</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
 
     <header>
         <div class="header-content" class="container-fluid">
@@ -81,7 +77,7 @@
     <section class="intro">
         <div class="container">
             <div class="row">
-                <div class="col-lg-8 col-lg-2">
+                <div class="col-lg-8 col-lg-offset-2">
                     <span class="glyphicon glyphicon-apple" style="font-size: 60px;"></span>
                     <h2 class="section-heading">Completely synergize resource taxing relationships</h2>
                     <p class="text-light">Professionally cultivate one-to-one customer service with robust ideas. Dynamically innovate resource-leveling customer service for state of the art customer service.</p>

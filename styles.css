@@ -58,12 +58,6 @@
 	color: white;
 	}
 
-
-@media(min-width: 768px) {
-	.header {
-		min-height: 100%;
-	}
-
 .header .header-content {
 	position: absolute;
 	top: 50%;
@@ -219,82 +213,81 @@
     transition: all .35s;
 }
 
-.navbar-default .navbar-header .navbar-brand {
+.navbar .sticky-top .navbar-expand-lg .navbar-light .bg-light {
 	color: yellowgreen;
 }
 
-.navbar-default .navbar-header .navbar-brand:hover,
-.navbar-default .navbar-header .navbar-brand:focus {
+.navbar .navbar-brand .navbar-expand-lg :hover,
+.navbar .navbar-brand .navbar-expand-lg :focus {
 	color: #eb3812;
 }
 
-.navbar-default .nav > li>a,
-.navbar-default .nav>li>a:focus {
+.navbar .nav > li>a,
+.navbar .nav>li>a:focus {
 	color: #222;
 }
 
-.navbar-default .nav > li>a:hover,
-.navbar-default .nav>li>a:focus:hover {
+.navbar .nav > li>a:hover,
+.navbar .nav>li>a:focus:hover {
 	color: yellowgreen;
 }
 
-.navbar-default .nav > li.active>a,
-.navbar-default .nav>li.active>a:focus {
+.navbar .nav > li.active>a,
+.navbar .nav>li.active>a:focus {
 	color: yellowgreen!important;
 	background-color: transparent;
 }
 
-.navbar-default .nav > li.active>a:hover,
-.navbar-default .nav>li.active>a:focus:hover {
+.navbar .nav > li.active>a:hover,
+.navbar .nav>li.active>a:focus:hover {
 	background-color: transparent;
 }
 
-@media(min-width768px) {
-	.navbar-default {
-		border-color: rgba(255, 255, 255, .3);
-		background-color: transparent;
-	}
-
-	.navbar-default .navbar-header .navbar-brand:hover,
-	.navbar-default .navbar-brand .navbar-brand:focus {
+	.navbar-default .navbar-brand:hover,
+	.navbar-default .navbar-brand:focus {
 		color: #fff;
 	}
 
-	.navbar-default .nav > li>a,
-	.navbar-default .nav>li>a:focus {
+	.navbar .nav > li>a,
+	.navbar .nav>li>a:focus {
 		color: rgba(255, 255, 255, .7);
 	}
 
-	.navbar-default .nav > li>a:hover,
-	.navbar-default .nav>li>a:focus:hover {
+	.navbar .nav > li>a:hover,
+	.navbar .nav>li>a:focus:hover {
 		color: #fff;
 	}
 
-	.navbar-default.affix {
+	.navbar.affix {
 		border-color: #fff;
 		background-color: #fff;
 		box-shadow: 0px 7px 20px 0px rgba(0, 0, 0, 0.1);
 	}
 
-	.navbar-default.affix .navbar-header .navbar-brand {
+	.navbar.affix .navbar-brand {
 		letter-spacing: 0;
 		color: yellowgreen;
 	}
 
-	.navbar-default.affix .navbar-header .navbar-brand:hover,
-	.navbar-default.affix .navbar-header .navbar-brand:focus {
+	.navbar.affix .navbar-brand:hover,
+	.navbar-default.affix .navbar-brand:focus {
 		color: #eb3812;
 	}
 
-	.navbar-default.affix .nav > li>a,
-	.navbar-default.affix .nav>li>a:focus:hover {
+	.navbar.affix .nav > li>a,
+	.navbar .nav>li>a:focus:hover {
 		color: yellowgreen;
 	}
-	.header {
+	.container{
 		display: flex;
+		flex-direction: row;
+		flex-wrap: nowrap;
+		justify-content: center;
+		justify-content: center;
+		align-content: center;
+		align-items: center;
 
 	}
-}
 
 .btn-default {
 	border-color: #fff;
