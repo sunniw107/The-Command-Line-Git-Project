@@ -1,8 +1,7 @@
 .html, 
 .body {
-	width: 100vw;
-	margin:  0px;
-	padding: 0px;
+	width: 100%;
+	height: 100%;
 	font-family: 'Open Sans'; 'Helvetica Neue' ,Arial, sans-serif;
 }
 
@@ -92,9 +91,12 @@
 }
 
 .img-circle {
-
 	border-radius: 55%;
 	width: 90%;
+}
+
+.container-fluid {
+	padding: 0rem;
 }
 
 .promo,
@@ -109,8 +111,8 @@
 }
 
 .promo-item {
-	height: 200px;
-	width: auto;
+	height: 20vh;
+	width: 100vw;
 	line-height: 180px;
 	text-align: center;
 	vertical-align: middle;
@@ -118,6 +120,7 @@
 }
 
 .promo-item:hover {
+	width: 100vw;
 	background-size: 110%;
 	border: 10px solid rgba(255, 255, 255, 0.3);
 	line-height: 160px;
@@ -125,11 +128,7 @@
 
 .promo-item, .h3 {
 	font-size: 40px;
-	display: inline-block;
-}
-
-.section-header {
-
+	vertical-align: middle;
 }
 
 .item-1 {
@@ -147,17 +146,9 @@
 .item-1,
 .item-2,
 .item-3 {
+	width: 100vw;
 	background-size: cover;
 	background-position:50% 50%;
-	height: 20vh;
-    width: 100%;
-}
-
-.item-1:hover,
-.item-2:hover,
-.item-3:hover {
-	border: solid;
-	border-color: transparent;
 }
 
 .page-footer {
@@ -165,7 +156,7 @@
 }
 
 .page-footer .contact {
-	padding: 100px 0;
+	padding: 10% 0;
 	background-color: yellowgreen;
 	color: #fff;
 }
@@ -182,7 +173,7 @@
 }
 
 .page-footer .small-print {
-	padding: 50px 0 40px;
+	padding: 5% 0 5% 0;
 	font-weight: 300;
 }
 
@@ -288,7 +279,7 @@ img::-moz-selection {
     background-color: yellowgreen;
 }
 
-@media only screen and (max-width:  414px) {
+@media only screen and (max-width: 414px) {
 	.header, .container, .container-fluid, .header-content, .content, .page-footer {
 			display: block;
 			align-items: center;
