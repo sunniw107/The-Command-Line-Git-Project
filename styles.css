@@ -42,7 +42,17 @@
 	-o-background-size: cover;
 }
 
+.header .header-content .header-content-inner .h1 {
+    margin-top: 0;
+    margin-bottom: 10%;
+    font-size: 50px;
+    font-weight: 300;
+}
+
 .header .header-content .header-content-inner .p {
+	margin-bottom: 20%;
+    font-size: 16px;
+    font-weight: 300;
 	color: rgba(255,255,255,.7);
 }
 
@@ -60,7 +70,6 @@
 }
 
 .header-content-inner {
-	text-align: center;
 	font-color: white;
 	color: white;
     padding: 15% 0% 20% 5%;
@@ -89,7 +98,7 @@
 }
 
 .content {
-	padding: 5% 0;
+	padding: 7% 5% 5% 10%;
 }
 
 .content-2 {
@@ -102,13 +111,9 @@
 	text-align: center;
 }
 
-.img-responsive {
-	ali: ;
-}
-
 .img-circle {
 	border-radius: 55%;
-	width: 70%;
+	width: 90%;
 }
 
 .promo,
@@ -123,7 +128,7 @@
 }
 
 .promo-item {
-	height: 20vh;
+	height: 25vh;
 	width: 100vw;
 	line-height: 180px;
 	text-align: center;
