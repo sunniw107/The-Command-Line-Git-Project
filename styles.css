@@ -36,6 +36,10 @@
 	line-height: 1.5;
 }
 
+.heading {
+	padding: 0 17% 0 17%;
+}
+
 .header {
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
@@ -92,7 +96,7 @@
 	color: #fff;
 	text-shadow: black;
 	background-color: yellowgreen;
-	padding: 3% 0 2% 0;
+	padding: 5% 0 2% 0;
 }
 
 .content {
