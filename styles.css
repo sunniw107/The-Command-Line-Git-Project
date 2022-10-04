@@ -8,6 +8,7 @@
 }
 
 .navbar-brand {
+	color: yellowgreen;
 	padding-left: 10%;
 }
 
@@ -92,11 +93,13 @@
 		font-size: 18px;
 }
 
+
+
 .Intro {
 	color: #fff;
 	text-shadow: black;
 	background-color: yellowgreen;
-	padding: 5% 0 2% 0;
+	padding: 5% 0 5% 0;
 }
 
 .content {
@@ -186,15 +189,15 @@
 	font-weight: 300;
 }
 
-.content .glyphicon,
-.page-footer .contact .glyphicon {
-	font-size: 32px;
-	font-weight: 700;
+.content .i,
+.page-footer, .contact {
+	font-size: 24px;
+	font-weight: 200;
 }
 
 .page-footer .small-print {
 	padding: 4% 0% 2%;
-	font-weight: 300
+	font-weight: 100
 }
 
 .text-light {
